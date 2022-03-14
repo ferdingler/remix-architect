@@ -1,3 +1,5 @@
+import { Link } from "remix";
+
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
@@ -20,6 +22,9 @@ export default function Index() {
           >
             This is server-side rendered
           </a>
+        </li>
+        <li>
+          <Link to="/posts">Navigate to posts</Link>
         </li>
         <li>
           <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
